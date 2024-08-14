@@ -2,6 +2,7 @@ function alterarStatus(tag) {
  let botao = document.getElementById('game-' + tag);
  let imagen = botao.querySelector('div');
  let botaoTexo = botao.querySelector('a');
+ let jogosAlugados = 1;
  if (imagen.classList.contains('dashboard__item__img--rented')) {
     //negativo
     console.log('negativo' + tag);
@@ -14,5 +15,7 @@ function alterarStatus(tag) {
    imagen.classList.add('dashboard__item__img--rented');
    botaoTexo.classList.add('dashboard__item__button--return');
    botaoTexo.textContent = 'Devolver';
+   jogosAlugados + 1;
+   console.console.log(jogosAlugados);
  }
 }
